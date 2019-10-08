@@ -1,0 +1,30 @@
+{
+  "ingredientsList": [
+    {
+      "name": "burger patty",
+      "id": 1
+    },
+    {
+      "name": "bacon",
+      "id": 2
+    },
+    {
+      "name": "egg",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "userName": "Thanos",
+      "permission": "CAN_BUY"
+    },
+    {
+      "userName": "Kwstas",
+      "permission": "ADMIN"
+    },
+    {
+      "userName": "Fillipos",
+      "permission": "CANT_BUY"
+    }
+  ]
+}

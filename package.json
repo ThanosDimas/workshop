@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html",
+    "start-api": "json-server --watch db.json",
+    "start-all": "start npm start && start npm run start-api",
     "build": "parcel build index.html"
   },
   "license": "MIT",
