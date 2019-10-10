@@ -1,8 +1,9 @@
 import * as React from "react";
+import { IIngredientsList } from "../../Interfaces/IIngredientsList";
 
 interface IBurgerProps {
-  ingredientsChoosed: any;
-  minusButton: any;
+  ingredientsChoosed: IIngredientsList[];
+  minusButton(index: number): void;
 }
 
 interface IBurgerState {}
@@ -24,7 +25,7 @@ export default class Burger extends React.Component<
         {ingredientsChoosed &&
           ingredientsChoosed.map((ingredient, index) => {
             return (
-              <div className="row">
+              <div className="row" key={index}>
                 <div className="col-10">
                   <img
                     className="float-right"

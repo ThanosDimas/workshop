@@ -1,6 +1,13 @@
-import React from "react";
+import * as React from "react";
 
-export default class Login extends React.Component {
+interface ILoginProps {
+  onInputChange(e: any): void;
+  submitUser(): void;
+}
+
+interface ILoginState {}
+
+export default class Login extends React.Component<ILoginProps, ILoginState> {
   render() {
     const { onInputChange, submitUser } = this.props;
     return (

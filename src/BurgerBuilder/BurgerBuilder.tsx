@@ -1,20 +1,21 @@
 import * as React from "react";
 import Burger from "./ChildComponents/Burger";
 import IngredientsPicker from "./ChildComponents/IngredientsPicker";
-import { ingredientsList } from "./../ApiClient/ApiClient";
+import { ingredientsList } from "../apiClient/apiClient";
+import { IIngredientsList } from "../Interfaces/IIngredientsList";
 
 interface IBurgerBuilderProps {}
 
 interface IBurgerBuilderState {
-  ingredientsList: any;
-  ingredientsChoosed: any;
+  ingredientsList: IIngredientsList[] | null;
+  ingredientsChoosed: IIngredientsList[];
 }
 
 export default class BurgerBuilder extends React.Component<
   IBurgerBuilderProps,
   IBurgerBuilderState
 > {
-  constructor(props) {
+  constructor(props: IBurgerBuilderProps) {
     super(props);
     this.state = {
       ingredientsList: null,
@@ -34,14 +35,14 @@ export default class BurgerBuilder extends React.Component<
     );
   };
 
-  plusButton = ingredient => {
+  plusButton = (ingredient: IIngredientsList) => {
     const ingredientsChoosed = [ingredient, ...this.state.ingredientsChoosed];
     this.setState({
       ingredientsChoosed: ingredientsChoosed
     });
   };
 
-  minusButton = index => {
+  minusButton = (index: number) => {
     const ingredients = this.state.ingredientsChoosed.slice();
     ingredients.splice(index, 1);
     this.setState({

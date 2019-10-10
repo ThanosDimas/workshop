@@ -1,4 +1,4 @@
-export function findUser(user) {
+export function findUser(user: any) {
   return fetch(`http://localhost:3000/users?userName=${user}`).then(results => {
     return results.json();
   });

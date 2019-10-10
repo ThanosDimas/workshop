@@ -1,8 +1,9 @@
 import * as React from "react";
+import { IIngredientsList } from "./../../Interfaces/IIngredientsList";
 
 interface IIngredientsPickerProps {
-  ingredientsList: any;
-  plusButton: any;
+  ingredientsList: IIngredientsList[] | null;
+  plusButton(ingredient: IIngredientsList): void;
 }
 
 interface IIngredientsPickerState {}
