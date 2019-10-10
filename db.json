@@ -2,15 +2,18 @@
   "ingredientsList": [
     {
       "name": "burger patty",
-      "id": 1
+      "id": 1,
+      "src": "burger-patty.png"
     },
     {
       "name": "bacon",
-      "id": 2
+      "id": 2,
+      "src": "bacon.png"
     },
     {
       "name": "egg",
-      "id": 3
+      "id": 3,
+      "src": "egg.png"
     }
   ],
   "users": [
@@ -23,7 +26,7 @@
       "permission": "ADMIN"
     },
     {
-      "userName": "Fillipos",
+      "userName": "Filippos",
       "permission": "CANT_BUY"
     }
   ]
