@@ -18,7 +18,7 @@ export default class Burger extends React.Component<
     return (
       <>
         <img
-          src="img/bun_top.png"
+          src="./img/bun_top.png"
           alt="bun_top"
           style={{ marginBottom: "-30px", position: "relative", zIndex: 30 }}
         />
@@ -29,7 +29,7 @@ export default class Burger extends React.Component<
                 <div className="col-10">
                   <img
                     className="float-right"
-                    src={"img/" + ingredient.src}
+                    src={"./img/" + ingredient.src}
                     alt={ingredient.name}
                     style={{
                       width: "400px",
