@@ -1,7 +1,7 @@
 import * as React from "react";
 import Login from "./Login/Login";
 import Admin from "./Admin/Admin";
-import { findUser } from "./apiClient/apiClient";
+import { findUser } from "./ApiClient/ApiClient";
 import { Permissions } from "./Permissions/Permissions";
 import BurgerBuilder from "./BurgerBuilder/BurgerBuilder";
 import "bootstrap/dist/css/bootstrap.css";

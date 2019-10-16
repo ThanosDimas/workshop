@@ -1,7 +1,7 @@
 import * as React from "react";
 import Burger from "./ChildComponents/Burger";
 import IngredientsPicker from "./ChildComponents/IngredientsPicker";
-import { ingredientsList } from "../apiClient/apiClient";
+import { ingredientsList } from "../ApiClient/ApiClient";
 import { IIngredientsList } from "../Interfaces/IIngredientsList";
 
 interface IBurgerBuilderProps {}
